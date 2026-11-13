@@ -5,3 +5,7 @@ TDM 155AI week 11 (class Wednesday, November 18, 2026): **games and interaction*
 It starts with the class's game-mechanics inventory and cards, printable and displayable. Course planning stays in The Notebook at `_context/projects/50-in-focus/tdm155ai-dev/plan/weeks/11-20261116-interactivity/`.
 
 Private until Marlon says to make it public. If it goes public, it becomes student-facing, and nothing private (grades, enrollment, comments on student work, correspondence) may go in it.
+
+## In this repo
+
+- [`game-mechanics/`](game-mechanics/README.md): the deck of 50 game mechanics, one card per file in `cards/`, with [the index](game-mechanics/index.md) and an 11×17 poster file for printing (`game-mechanics/print/posters-11x17.md`). Rebuild both after editing cards with `node game-mechanics/scripts/build.mjs`.
