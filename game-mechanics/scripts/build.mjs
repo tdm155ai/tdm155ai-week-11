@@ -130,4 +130,19 @@ for (const c of cards) {
   ].join("\n"));
 }
 
-console.log(`${cards.length} cards → index.md, print/posters-11x17.md, nextjs/content/elements/mechanics/`);
+// One long list: each mechanic and its one line, grouped by family. Only one H1, so it prints continuously.
+const printList = [
+  "# Game mechanics",
+  "",
+  `*${cards.length} mechanics in ${families.length} families. TDM 155AI, week 11.*`,
+  "",
+];
+for (const fam of families) {
+  printList.push(`## ${fam}`, "");
+  for (const c of cards.filter((c) => c.family === fam)) {
+    printList.push(`**${c.title}.** ${c.one_line}`, "");
+  }
+}
+fs.writeFileSync(path.join(root, "print", "list.md"), printList.join("\n"));
+
+console.log(`${cards.length} cards → index.md, print/posters-11x17.md, print/list.md, nextjs/content/elements/mechanics/`);
