@@ -39,27 +39,4 @@
 .semantle-table tr.latest td { border-bottom: 2px solid var(--accent); color: var(--accent); }
 .semantle-bar { display: inline-block; width: 80px; height: 8px; margin-right: 10px; border-radius: 4px; background: linear-gradient(to right, var(--accent) calc(var(--fill) * 100%), var(--line) 0); vertical-align: middle; }
 
-/* The Studio */
-.studio { align-items: stretch; }
-.studio-goal { display: flex; flex-direction: column; gap: 10px; }
-.studio-goal p { display: flex; align-items: center; gap: 12px; margin: 0; font-size: 18px; font-weight: 700; }
-.studio-progress { height: 10px; border-radius: 5px; background: linear-gradient(to right, var(--accent) calc(var(--fill) * 100%), var(--line) 0); transition: background .2s; }
-.studio-won { color: var(--ok); }
-.studio-columns { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr); gap: clamp(24px, 5vw, 56px); }
-.studio-stock { margin: 0 0 20px; padding: 0; list-style: none; font-variant-numeric: tabular-nums; }
-.studio-stock li { display: grid; grid-template-columns: 1fr auto 110px; align-items: baseline; gap: 12px; padding: 7px 0; border-bottom: 1px solid var(--line); }
-.studio-stock span { color: var(--muted); }
-.studio-stock strong { font-size: 20px; }
-.studio-stock em { color: var(--ok); font-size: 12px; font-style: normal; text-align: right; }
-.studio-actions { display: flex; flex-direction: column; gap: 8px; }
-.studio-button { display: grid; gap: 3px; padding: 12px 16px; border: 1px solid var(--line); border-radius: 6px; background: var(--wash); color: var(--ink); font: inherit; text-align: left; cursor: pointer; }
-.studio-button strong { font-size: 16px; }
-.studio-button span { color: var(--muted); font-size: 13px; }
-.studio-button .studio-cost { color: var(--accent); }
-.studio-button:hover:not(:disabled) { border-color: var(--accent); }
-.studio-button:disabled { opacity: .45; cursor: default; }
-.studio-button:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
-.studio-log { margin: 14px 0 0; padding: 0; list-style: none; font-size: 17px; line-height: 1.6; }
-.studio-log li { padding: 8px 0; }
-@media (max-width: 640px) { .studio-columns { grid-template-columns: 1fr; } }
 .game-notes a { color: var(--accent); text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; }
