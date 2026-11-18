@@ -7,3 +7,7 @@ node_modules/
 !.env.example
 .DS_Store
 .next/
+
+# NFC card passwords (nfc-tools), never committed
+nfc-tools/card-passwords.json
+__pycache__/

@@ -1,0 +1,121 @@
+[
+  {
+    "id": "rockstar",
+    "url": "https://support.rockstargames.com/articles/29jV3Cv2cCgvwM1XgtMO5o/grand-theft-auto-vi-regional-pre-load-and-release-times-on-playstation-5-and-xbox-series-x-or-s",
+    "status": null,
+    "error": "ERR_HTTP2_STREAM_ERROR",
+    "checkedAt": "2026-11-18T15:26:39.576Z"
+  },
+  {
+    "id": "ttwo",
+    "url": "https://www.sec.gov/Archives/edgar/data/946581/000162828026072254/ttwo-20260930.htm",
+    "status": 403,
+    "finalUrl": "https://www.sec.gov/Archives/edgar/data/946581/000162828026072254/ttwo-20260930.htm",
+    "checkedAt": "2026-11-18T15:26:39.592Z"
+  },
+  {
+    "id": "launch",
+    "url": "https://ir.take2games.com/node/16191/",
+    "status": 200,
+    "finalUrl": "https://ir.take2games.com/node/16191/",
+    "checkedAt": "2026-11-18T15:26:39.593Z"
+  },
+  {
+    "id": "levvvel",
+    "url": "https://www.levvvel.com/statistics/rockstar-games/",
+    "status": 200,
+    "finalUrl": "https://levvvel.com/statistics/rockstar-games/",
+    "checkedAt": "2026-11-18T15:26:39.593Z"
+  },
+  {
+    "id": "engadget",
+    "url": "https://www.engadget.com/2246918/video-games-rival-gta-6-budget/",
+    "status": 200,
+    "finalUrl": "https://www.engadget.com/2246918/video-games-rival-gta-6-budget/",
+    "checkedAt": "2026-11-18T15:26:39.594Z"
+  },
+  {
+    "id": "presales",
+    "url": "https://www.axios.com/2026/11/17/grand-theft-auto-vi-gaming-recurring-revenue",
+    "status": 403,
+    "finalUrl": "https://www.axios.com/2026/11/17/grand-theft-auto-vi-gaming-recurring-revenue",
+    "checkedAt": "2026-11-18T15:26:40.002Z"
+  },
+  {
+    "id": "sensor",
+    "url": "https://sensortower.com/grand-theft-auto-VI/sales-tracker",
+    "status": 200,
+    "finalUrl": "https://sensortower.com/grand-theft-auto-VI/sales-tracker",
+    "checkedAt": "2026-11-18T15:26:40.003Z"
+  },
+  {
+    "id": "budget",
+    "url": "https://www.gamesradar.com/games/grand-theft-auto/rockstar-still-wont-reveal-the-cost-of-gta-6-development-but-its-definitely-not-the-previously-rumored-usd1-5-billion/",
+    "status": 200,
+    "finalUrl": "https://www.gamesradar.com/games/grand-theft-auto/rockstar-still-wont-reveal-the-cost-of-gta-6-development-but-its-definitely-not-the-previously-rumored-usd1-5-billion/",
+    "checkedAt": "2026-11-18T15:26:40.003Z"
+  },
+  {
+    "id": "sony",
+    "url": "https://www.pushsquare.com/news/2023/06/the-last-of-us-2-cost-usd220-million-to-make-horizon-forbidden-west-cost-usd212-million",
+    "status": 200,
+    "finalUrl": "https://www.pushsquare.com/news/2023/06/the-last-of-us-2-cost-usd220-million-to-make-horizon-forbidden-west-cost-usd212-million",
+    "checkedAt": "2026-11-18T15:26:40.003Z"
+  },
+  {
+    "id": "cod",
+    "url": "https://www.gamefile.news/p/call-of-duty-budgets-development-costs-black-ops-modern-warfare",
+    "status": 200,
+    "finalUrl": "https://www.gamefile.news/p/call-of-duty-budgets-development-costs-black-ops-modern-warfare",
+    "checkedAt": "2026-11-18T15:26:40.004Z"
+  },
+  {
+    "id": "filmbudgets",
+    "url": "https://www.boxofficemojo.com/showdown/sd725218820/",
+    "status": 200,
+    "finalUrl": "https://www.boxofficemojo.com/showdown/sd725218820/",
+    "checkedAt": "2026-11-18T15:26:40.293Z"
+  },
+  {
+    "id": "films",
+    "url": "https://www.boxofficemojo.com/chart/ww_top_lifetime_gross/",
+    "status": 200,
+    "finalUrl": "https://www.boxofficemojo.com/chart/ww_top_lifetime_gross/",
+    "checkedAt": "2026-11-18T15:26:40.294Z"
+  },
+  {
+    "id": "disney",
+    "url": "https://thewaltdisneycompany.com/news/marvel-studios-avengers-endgame-makes-history-with-1-2-billion-global-debut/",
+    "status": 200,
+    "finalUrl": "https://thewaltdisneycompany.com/news/marvel-studios-avengers-endgame-makes-history-with-1-2-billion-global-debut/",
+    "checkedAt": "2026-11-18T15:26:40.294Z"
+  },
+  {
+    "id": "pollstar",
+    "url": "https://news.pollstar.com/2024/12/16/planet-earth-taylors-version-taylor-swift-dominates-it-all/",
+    "status": 200,
+    "finalUrl": "https://news.pollstar.com/2024/12/16/planet-earth-taylors-version-taylor-swift-dominates-it-all/",
+    "checkedAt": "2026-11-18T15:26:40.294Z"
+  },
+  {
+    "id": "pwc",
+    "url": "https://www.pwc.com/gx/en/news-room/press-releases/2025/pwc-global-entertainment-media-outlook.html",
+    "status": 403,
+    "finalUrl": "https://www.pwc.com/gx/en/news-room/press-releases/2025/pwc-global-entertainment-media-outlook.html",
+    "checkedAt": "2026-11-18T15:26:40.295Z"
+  },
+  {
+    "id": "ifpi",
+    "url": "https://www.ifpi.org/global-music-report-2026-global-recorded-music-revenues-grow-6-4-as-record-companies-drive-innovation/",
+    "status": 200,
+    "finalUrl": "https://www.ifpi.org/global-music-report-2026-global-recorded-music-revenues-grow-6-4-as-record-companies-drive-innovation/",
+    "checkedAt": "2026-11-18T15:26:40.907Z"
+  },
+  {
+    "id": "spotify",
+    "url": "https://loudandclear.byspotify.com/faq/",
+    "status": 200,
+    "finalUrl": "https://loudandclear.byspotify.com/faq/",
+    "checkedAt": "2026-11-18T15:26:40.908Z"
+  }
+]

@@ -1,0 +1,10 @@
+/* Target practice: the canvas, with the score, the crosshair, and the start button laid over it. */
+.fps-board { align-items: stretch; }
+.fps-stage { position: relative; width: 100%; aspect-ratio: 16 / 9; overflow: hidden; border-radius: 8px; background: #151714; }
+.fps-canvas { display: block; width: 100%; height: 100%; cursor: crosshair; }
+.fps-hud { position: absolute; top: 12px; left: 16px; right: 16px; display: flex; justify-content: space-between; color: #fff; font-size: 15px; font-variant-numeric: tabular-nums; pointer-events: none; text-shadow: 0 1px 3px rgb(0 0 0 / .6); }
+.fps-hud strong { margin-left: 6px; font-size: 22px; }
+.fps-crosshair { position: absolute; top: 50%; left: 50%; width: 16px; height: 16px; margin: -8px 0 0 -8px; border: 2px solid #fff; border-radius: 50%; pointer-events: none; mix-blend-mode: difference; }
+.fps-overlay { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 14px; padding: 16px; background: rgb(0 0 0 / .45); color: #fff; text-align: center; }
+.fps-result { margin: 0; font-size: clamp(20px, 3vw, 28px); font-weight: 800; letter-spacing: -.02em; }
+.fps-help { margin: 0; color: #d6d8d2; font-size: 14px; }

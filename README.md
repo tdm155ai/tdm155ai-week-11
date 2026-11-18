@@ -1,11 +1,40 @@
-# tdm155ai-week-11
+# TDM 155AI, week 11: Games
 
-TDM 155AI week 11 (class Wednesday, November 18, 2026): **games and interaction**. Created November 13 as mkuzmick (Marlon, Nov 13: "we can also create tdm155ai-week-11 in the tdm org too"; "We will start by putting the game mechanics in there"), nested in The Notebook at `apps/tdm155ai/tdm155ai-week-11/`.
+For class on Wednesday, November 18, 2026. Games answer back. This week we look at what a game is made of, play and remake a few small ones, and build one mechanic of our own: for a game, or for a presentation, a lab report, or a research tool that could use one.
 
-It starts with the class's game-mechanics inventory and cards, printable and displayable. Course planning stays in The Notebook at `_context/projects/50-in-focus/tdm155ai-dev/plan/weeks/11-20261116-interactivity/`.
+## Run it
 
-**Public since November 18** (Marlon: "this one can be public"). It is student-facing: nothing private (grades, enrollment, comments on student work, correspondence) may go in it.
+Use Node 22 or newer and pnpm. From this repository's root:
 
-## In this repo
+```
+cd nextjs
+pnpm install
+pnpm dev -p 3000
+```
 
-- [`game-mechanics/`](game-mechanics/README.md): the deck of 50 game mechanics, one card per file in `cards/`, with [the index](game-mechanics/index.md) and an 11×17 poster file for printing (`game-mechanics/print/posters-11x17.md`). Rebuild both after editing cards with `node game-mechanics/scripts/build.mjs`.
+Open http://localhost:3000 in Chrome.
+
+## What's here
+
+The site has four parts, and each is a folder of Markdown in `nextjs/content/`. Edit a file and refresh the page to see the change.
+
+| Part | Page | Folder |
+| --- | --- | --- |
+| Why? | `/why` | `nextjs/content/why/` |
+| Elements | `/elements` | `nextjs/content/elements/` |
+| Building games | `/games` | `nextjs/content/games/`, with the games themselves in `nextjs/app/games/` |
+| Final project | `/final-project-and-portfolio` | `nextjs/content/final-project-and-portfolio/` |
+
+Put `/print` in front of any page's address for a version to print.
+
+## NFC cards
+
+A card or sticker that opens a link when a phone taps it is a small game piece you can make this week.
+
+- [`nfc-tools/`](nfc-tools/README.md) writes a link onto an NFC tag with a USB reader, and can lock the tag so nobody else rewrites it.
+- [`nfc-app/`](nfc-app/README.md) is a separate small app where taps land, with one sub-app per colour. It runs on a laptop and reaches phones through a tunnel.
+- [`nfc-app/MECHANICS.md`](nfc-app/MECHANICS.md) describes what a card can do: one card or many, a link that stays the same or one that changes, and what the tap sets off.
+
+## The full deck
+
+[`game-mechanics/`](game-mechanics/README.md) holds the full deck of 50 game mechanics, one card per file, with an index and a poster file for printing.

@@ -1,0 +1,65 @@
+/* The games in app/games/: the page frame, then Wordle, then Semantle. Colours come from the site's tokens in globals.css. */
+.game-shell { width: min(100%, 960px); min-height: calc(100vh - 160px); margin: 0 auto; padding: 44px var(--gutter) 100px; }
+.game-heading { max-width: 760px; margin-bottom: 40px; }
+.game-heading h1 { margin: 16px 0 14px; font-size: clamp(44px, 7vw, 82px); line-height: .98; letter-spacing: -.055em; }
+.game-board { display: flex; flex-direction: column; align-items: center; gap: 18px; padding: 32px 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.game-message { min-height: 1.5em; margin: 0; color: var(--muted); font-size: 15px; text-align: center; }
+.game-actions { display: flex; gap: 12px; }
+.game-button { padding: 10px 18px; border: 1px solid var(--accent); border-radius: 999px; background: var(--accent); color: var(--accent-ink); font: inherit; font-size: 14px; font-weight: 700; cursor: pointer; }
+.game-button.quiet { background: transparent; color: var(--accent); }
+.game-button:focus-visible, .wordle-key:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+.game-notes { max-width: 740px; margin-top: 48px; color: var(--muted); font-size: 16px; line-height: 1.7; }
+.game-notes h2 { margin: 1.6em 0 .5em; color: var(--ink); font-size: 22px; letter-spacing: -.03em; }
+.game-notes code { padding: .08em .35em; border: 1px solid var(--line); border-radius: 4px; background: var(--code); color: var(--ink); font-family: ui-monospace, monospace; font-size: .86em; }
+
+/* Wordle */
+.wordle-grid { display: grid; gap: 6px; }
+.wordle-row { display: grid; grid-template-columns: repeat(var(--letters), 1fr); gap: 6px; }
+.wordle-cell { display: grid; place-items: center; width: clamp(48px, 13vw, 62px); aspect-ratio: 1; border: 2px solid var(--line); font-size: clamp(24px, 6vw, 30px); font-weight: 800; text-transform: uppercase; }
+.wordle-cell.typed { border-color: var(--muted); }
+.correct { border-color: #4f9a5a; background: #4f9a5a; color: #fff; }
+.present { border-color: #c4a23a; background: #c4a23a; color: #fff; }
+.absent { border-color: #3a3d39; background: #3a3d39; color: var(--muted); }
+.wordle-keys { display: flex; flex-direction: column; gap: 6px; width: min(100%, 520px); }
+.wordle-key-row { display: flex; justify-content: center; gap: 5px; }
+.wordle-key { flex: 1 1 0; max-width: 44px; height: 54px; padding: 0; border: 0; border-radius: 4px; background: #565a54; color: var(--ink); font: inherit; font-size: 14px; font-weight: 700; text-transform: uppercase; cursor: pointer; }
+.wordle-key.wide { flex: 1.5 1 0; max-width: 68px; font-size: 12px; }
+.wordle-key.absent { background: #2a2c29; color: #6f736c; }
+
+/* Semantle */
+.semantle { align-items: stretch; }
+.semantle-hints { max-width: 680px; margin: 0; color: var(--muted); font-size: 15px; line-height: 1.6; }
+.semantle-hints strong { color: var(--ink); font-variant-numeric: tabular-nums; }
+.semantle-form { display: flex; gap: 10px; }
+.semantle-form input { flex: 1; min-width: 0; padding: 12px 16px; border: 1px solid var(--line); border-radius: 8px; background: var(--wash); color: var(--ink); font: inherit; font-size: 17px; }
+.semantle-form input:focus { outline: 2px solid var(--accent); outline-offset: 1px; }
+.semantle-table { width: 100%; border-collapse: collapse; font-size: 15px; font-variant-numeric: tabular-nums; }
+.semantle-table th { padding: 8px 10px; border-bottom: 1px solid var(--line); color: var(--muted); font-size: 11px; letter-spacing: .12em; text-align: left; text-transform: uppercase; }
+.semantle-table td { padding: 8px 10px; border-bottom: 1px solid var(--line); }
+.semantle-table tr.latest td { border-bottom: 2px solid var(--accent); color: var(--accent); }
+.semantle-bar { display: inline-block; width: 80px; height: 8px; margin-right: 10px; border-radius: 4px; background: linear-gradient(to right, var(--accent) calc(var(--fill) * 100%), var(--line) 0); vertical-align: middle; }
+
+/* The Studio */
+.studio { align-items: stretch; }
+.studio-goal { display: flex; flex-direction: column; gap: 10px; }
+.studio-goal p { display: flex; align-items: center; gap: 12px; margin: 0; font-size: 18px; font-weight: 700; }
+.studio-progress { height: 10px; border-radius: 5px; background: linear-gradient(to right, var(--accent) calc(var(--fill) * 100%), var(--line) 0); transition: background .2s; }
+.studio-won { color: var(--ok); }
+.studio-columns { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr); gap: clamp(24px, 5vw, 56px); }
+.studio-stock { margin: 0 0 20px; padding: 0; list-style: none; font-variant-numeric: tabular-nums; }
+.studio-stock li { display: grid; grid-template-columns: 1fr auto 110px; align-items: baseline; gap: 12px; padding: 7px 0; border-bottom: 1px solid var(--line); }
+.studio-stock span { color: var(--muted); }
+.studio-stock strong { font-size: 20px; }
+.studio-stock em { color: var(--ok); font-size: 12px; font-style: normal; text-align: right; }
+.studio-actions { display: flex; flex-direction: column; gap: 8px; }
+.studio-button { display: grid; gap: 3px; padding: 12px 16px; border: 1px solid var(--line); border-radius: 6px; background: var(--wash); color: var(--ink); font: inherit; text-align: left; cursor: pointer; }
+.studio-button strong { font-size: 16px; }
+.studio-button span { color: var(--muted); font-size: 13px; }
+.studio-button .studio-cost { color: var(--accent); }
+.studio-button:hover:not(:disabled) { border-color: var(--accent); }
+.studio-button:disabled { opacity: .45; cursor: default; }
+.studio-button:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+.studio-log { margin: 14px 0 0; padding: 0; list-style: none; font-size: 17px; line-height: 1.6; }
+.studio-log li { padding: 8px 0; }
+@media (max-width: 640px) { .studio-columns { grid-template-columns: 1fr; } }
+.game-notes a { color: var(--accent); text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; }

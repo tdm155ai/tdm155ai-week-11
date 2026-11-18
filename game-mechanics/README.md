@@ -1,14 +1,8 @@
----
-title: "Game mechanics"
-author: claude (GM, Claude Code 01e4ddf0-9bb0-4c13-81fa-fc56e504176f), Nov 13, 2026
-status: "First draft for Marlon to edit. The cards are drawn from the Learning Lab's earlier mechanics decks plus new entries; the game examples are from general knowledge and not yet source-checked."
----
-
 # Game mechanics
 
-A **mechanic** is a rule that makes something happen: a timer, a vote, a secret, a turn, a roll of the dice. Games are built from mechanics, and so is a lot of theater, music, and installation work. This is a deck of 50, in eight families, for TDM 155AI week 11 (games and interaction, class Wednesday, November 18, 2026).
+A **mechanic** is a rule that makes something happen: a timer, a vote, a secret, a turn, a roll of the dice. Games are built from mechanics, and so is a lot of theater, music, installation work, and things that aren't games at all. This is a deck of 50, in eight families.
 
-**Start with [the index](index.md)**: every mechanic on one page, by family.
+**Start with [the index](index.md)**: every mechanic on one page, by family. On the class site the same list is at `/elements/mechanics`, with a page for each card.
 
 ## Each card
 
@@ -16,10 +10,12 @@ One mechanic per file in [`cards/`](cards/), numbered `01`–`50`. Each card has
 
 - **One line:** what the mechanic does.
 - **Shows it:** a well-known game where you can see it.
-- **Try it in two minutes:** a paper, card, or body version anyone can play in the room, no computer.
-- **Build it:** one way to build it with Claude Code, using the week 10 app's tools: `/launch` (keys, buttons, MIDI pads, a cue list with Go), `/voice` (spoken-word triggers), `/track` (MediaPipe hands, face, pose, floor zones), `/draw-a-box` (the overhead camera reads paper and cards), and `/stage` (the projector window).
+- **Try it in two minutes:** a paper, card, or body version you can play in the room, no computer.
+- **Build it:** one way to build it with Claude Code. These name tools from week 10's app: `/launch` (keys, buttons, MIDI pads, a cue list with Go), `/voice` (spoken-word triggers), `/track` (MediaPipe hands, face, pose, floor zones), `/draw-a-box` (the overhead camera reads paper and cards), and `/stage` (the projector window). You can also ask Claude to build the same thing from scratch.
 
 The same fields sit in each card's frontmatter, so a print layout, a display, or an app can read them.
+
+The games on the cards are well-known examples from general knowledge and haven't been checked against sources yet. If one looks wrong, check it.
 
 ## Ways to play the deck
 
@@ -29,24 +25,18 @@ The same fields sit in each card's frontmatter, so a print layout, a display, or
 
 ## Print it
 
-Wall posters, one mechanic per 11×17 page (51 pages with the title page), with The Notebook's `mk-printing` skill. From The Notebook root:
-
-```sh
-node .agents/skills/mk-printing/scripts/print.mjs apps/tdm155ai/tdm155ai-week-11/game-mechanics/print/posters-11x17.md --open
-```
-
-Hand cards at half-letter (two per Letter sheet with a cut line) are proposed, not built yet.
+With the class site running, open `/print/elements/mechanics` and print from the browser: the list, then one card per 11×17 sheet. [`print/posters-11x17.md`](print/posters-11x17.md) holds the same posters as one Markdown file, a title page and then one mechanic per page, for any Markdown-to-PDF tool that starts a new page at each top-level heading.
 
 ## Change it
 
-Edit or add files in `cards/`, then rebuild the index and the poster file (no dependencies):
+Edit or add files in `cards/`, then rebuild (no dependencies), from this repo's root:
 
 ```sh
 node game-mechanics/scripts/build.mjs
 ```
 
-Run it from this repo's root. `index.md` and `print/posters-11x17.md` are generated; don't edit them by hand.
+That rewrites `index.md`, `print/posters-11x17.md`, and the site's pages in `nextjs/content/elements/mechanics/`. They are generated, so edit the cards, not them.
 
 ## Where it comes from
 
-Twenty-seven cards come from mechanics the Learning Lab named for other workshops this fall: a small-theater challenge deck and an inventory of mechanics that bring an audience together (both November 5), a video-games workshop's dialogue-tree station (October 22), the week 10 installation mechanics (November 11), and this course's plan for AI co-stars. Twenty-three are new. Each card's `sources` field says which. Planning notes stay outside this repo.
+The Learning Lab wrote these for this course in November 2026. Twenty-seven cards come from mechanics the LL had named for other workshops that fall (a small-theater challenge deck, an inventory of mechanics that bring an audience together, a video-games workshop's dialogue trees, and an installation week); twenty-three are new. Each card's `sources` field says which.
